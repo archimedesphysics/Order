@@ -74,12 +74,12 @@ public class Order {
 //		Click on Process
 		driver.findElement(By.id("ctl00_MainContent_fmwOrder_InsertButton")).click();
 		
-//		Verify than the page contains text New order has been successfully added.
-//		 if( driver.findElement(By.cssSelector("#ctl00_MainContent_fmwOrder > tbody > tr > td > div > strong")).isDisplayed()){
-//				System.out.println("Verified");
-//		}else{
-//				System.out.println("unVerified");
-//		}
+		//Verify than the page contains text New order has been successfully added.
+		 if( driver.findElement(By.cssSelector("#ctl00_MainContent_fmwOrder > tbody > tr > td > div > strong")).isDisplayed()){
+				System.out.println("Verified");
+		}else{
+				System.out.println("unVerified");
+		}
 	    
 	  //*[@id="ctl00_MainContent_fmwOrder"]/tbody/tr/td/div/strong
 	    
